@@ -1,0 +1,37 @@
+This is a doctest file for the function `say_my_name`.
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Test 1: Both first and last names provided
+>>> say_my_name("John", "Doe")
+My name is John Doe
+
+# Test 2: Only first name provided
+>>> say_my_name("John")
+My name is John 
+
+# Test 3: First name as an empty string, last name provided
+>>> say_my_name("", "Doe")
+My name is  Doe
+
+# Test 4: Both names as empty strings
+>>> say_my_name("", "")
+My name is  
+
+# Test 5: First name is not a string (TypeError expected)
+>>> say_my_name(123, "Doe")
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+# Test 6: Last name is not a string (TypeError expected)
+>>> say_my_name("John", 456)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
+
+# Test 7: Non-string input for both names (TypeError expected)
+>>> say_my_name(123, 456)
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string

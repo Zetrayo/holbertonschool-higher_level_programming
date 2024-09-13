@@ -1,0 +1,47 @@
+This is a doctest file for the function `text_indentation`.
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# Test 1: Input with periods, question marks, and colons
+>>> text_indentation("Hello. How are you? Fine: thank you.")
+Hello.
+
+ How are you?
+
+ Fine:
+
+ thank you.
+
+# Test 2: Input without any special punctuation
+>>> text_indentation("This is just a regular sentence.")
+This is just a regular sentence.
+
+# Test 3: Input with consecutive punctuation
+>>> text_indentation("Hi... What??: Yes.")
+Hi.
+
+.
+
+.
+
+ What?
+
+?
+
+:
+
+ Yes.
+
+# Test 4: Empty string
+>>> text_indentation("")
+<BLANKLINE>
+
+# Test 5: Input with no punctuation
+>>> text_indentation("No punctuation here")
+No punctuation here
+
+# Test 6: Input that is not a string (TypeError expected)
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
