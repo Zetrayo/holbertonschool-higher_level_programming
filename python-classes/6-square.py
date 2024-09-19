@@ -2,6 +2,8 @@
 """
 Module of square.
 """
+
+
 class Square:
     """
     A class representing a square.
