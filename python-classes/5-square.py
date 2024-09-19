@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 class Square:
+    """
+    A class representing a square.
+    """
     '''setter'''
     def size(self, value):
         self.size = value
