@@ -14,8 +14,8 @@ class Square:
 
         Args:
             size (int): The size of one side of the square (default is 0).
-            position (tuple): The position of the square when printed, 
-                              defined as a tuple of 2 positive integers (default is (0, 0)).
+            position (tuple): The position of the square when printed,
+            defined as a tuple of 2 positive integers (default is (0, 0)).
 
         Raises:
             TypeError: If size is not an integer.
@@ -54,13 +54,14 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    @property    
+    @property
     def position(self):
         """
         Retrieves the position of the square.
 
         Returns:
-            tuple: A tuple of 2 positive integers representing the position of the square.
+            tuple: A tuple of 2 positive integers
+        representing the position of the square.
         """
         return self.__position
 
@@ -70,10 +71,12 @@ class Square:
         Sets the position of the square.
 
         Args:
-            value (tuple): A tuple of 2 positive integers representing the position of the square.
+            value (tuple): A tuple of 2 positive
+            integers representing the position of the square.
 
         Raises:
-            TypeError: If position is not a tuple of 2 positive integers.
+            TypeError: If position is not a tuple of
+            2 positive integers.
         """
         if (not isinstance(value, tuple) or len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
@@ -92,7 +95,8 @@ class Square:
 
     def my_print(self):
         """
-        Prints the square using the `#` character based on its size and position.
+        Prints the square using the `#` character
+        based on its size and position.
 
         If the size is 0, it prints an empty line. Otherwise, it prints
         the square with respect to its position.

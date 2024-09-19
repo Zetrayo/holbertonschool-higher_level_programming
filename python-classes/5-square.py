@@ -12,8 +12,8 @@ class Square:
 
         Args:
             size (int): The size of one side of the square (default is 0).
-            position (tuple): The position of the square when printed, 
-                              defined as a tuple of 2 positive integers (default is (0, 0)).
+            position (tuple): The position of the square when printed,
+            defined as a tuple of 2 positive integers (default is (0, 0)).
 
         Raises:
             TypeError: If size is not an integer.
@@ -32,7 +32,7 @@ class Square:
             int: The size of one side of the square.
         """
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """
@@ -63,7 +63,8 @@ class Square:
 
     def my_print(self):
         """
-        Prints the square using the `#` character based on its size and position.
+        Prints the square using the `#` character
+        based on its size and position.
 
         If the size is 0, it prints an empty line. Otherwise, it prints
         the square with respect to its position.

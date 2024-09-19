@@ -12,8 +12,8 @@ class Square:
 
         Args:
             size (int): The size of one side of the square (default is 0).
-            position (tuple): The position of the square when printed, 
-                              defined as a tuple of 2 positive integers (default is (0, 0)).
+            position (tuple): The position of the square when printed,
+            defined as a tuple of 2 positive integers (default is (0, 0)).
 
         Raises:
             TypeError: If size is not an integer.
