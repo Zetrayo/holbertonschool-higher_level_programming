@@ -1,0 +1,26 @@
+This is a doctest file for the function `MyList`.
+
+>>> MyList = __import__('1-my_list').MyList
+
+>>> my_list = MyList([3, 1, 4, 2, 5])
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> my_list
+[3, 1, 4, 2, 5]
+>>> empty_list = MyList([])
+>>> empty_list.print_sorted()
+[]
+>>> empty_list
+[]
+>>> single_item_list = MyList([10])
+>>> single_item_list.print_sorted()
+[10]
+>>> single_item_list
+[10]
+
+>>> my_list = MyList([3, 1, 4, 2, 5])
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> another_list = MyList([10, 5, -2])
+>>> another_list.print_sorted()
+[-2, 5, 10]

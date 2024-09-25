@@ -1,0 +1,29 @@
+This is a doctest file for the function `BaseGeometry`.
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+>>> bg.integer_validator("width", 10)  # Valid integer
+>>> bg.integer_validator("width", -5)  # Invalid, raises ValueError
+Traceback (most recent call last):
+...
+ValueError: width must be greater than 0
+>>> bg.integer_validator("height", "10")  # Invalid, raises TypeError
+Traceback (most recent call last):
+...
+TypeError: height must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("width", 10)  # Valid case
+>>> bg.integer_validator("width", -1)  # Invalid, raises ValueError
+Traceback (most recent call last):
+...
+ValueError: width must be greater than 0
+>>> bg.integer_validator("height", "5")  # Invalid, raises TypeError
+Traceback (most recent call last):
+...
+TypeError: height must be an integer
