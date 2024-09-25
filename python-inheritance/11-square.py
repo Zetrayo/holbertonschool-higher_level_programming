@@ -10,7 +10,7 @@ class BaseGeometry():
     """
     def area(self):
         raise Exception("area() is not implemented")
-    
+
     def integer_validator(self, name, value):
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
@@ -39,6 +39,7 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         return ("[Rectangle] {}/{}".format(self.__width, self.__height))
 
+
 class Square(Rectangle):
     """
     A class of square.
@@ -51,4 +52,5 @@ class Square(Rectangle):
         return super().area()
 
     def __str__(self):
-        return ("[Square] {}/{}".format(self._Rectangle__width, self._Rectangle__height))
+        return ("[Square] {}/{}".format(self._Rectangle__width,
+                                        self._Rectangle__height))
