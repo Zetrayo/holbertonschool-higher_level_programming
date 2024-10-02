@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import sys
-import json
-from os.path import exists
-
-
 """not empty"""
+
+
+import json
+import sys
+from os.path import exists
 
 
 def save_to_json_file(my_obj, filename):

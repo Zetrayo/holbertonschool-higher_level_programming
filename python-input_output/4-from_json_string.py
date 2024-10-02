@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-import json
-
 """not empty"""
+
+
+import json
 
 
 def from_json_string(my_str):
