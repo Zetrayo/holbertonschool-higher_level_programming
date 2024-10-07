@@ -1,0 +1,1 @@
+I forgor readme, ill do it later if i remember

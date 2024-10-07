@@ -13,6 +13,14 @@ This repository is dedicated to the study of coding languages through Holbertons
 |python-more_data_structures|Python|
 |python-exceptions|Python|
 |python-test_driven_development|Python|
+|python-abc|Python|
+|python-classes|Python|
+|python-inheritance|Python|
+|python-input_output|Python|
+|python-more_classes|Python|
+|python-serialization|Python|
+|restful-api|Python|
+
 
 ## Contributors
 
