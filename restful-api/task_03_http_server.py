@@ -17,11 +17,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b"Hello, this is a simple API!")
         elif self.path == '/data':
-            sample_data = {
-                "name": "John",
-                "age": 30,
-                "city": "New York"
-            }
+            sample_data = {"name": "John", "age": 30, "city": "New York"}
             self.send_response(200)
             self.send_header('Content-type', 'application/json')
             self.end_headers()
@@ -31,6 +27,13 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
             self.wfile.write(b"OK")
+        elif self.path == '/info':
+            sample_data = {"version": "1.0", "description":
+                           "A simple API built with http.server"}
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps(sample_data).encode('utf-8'))
         else:
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
