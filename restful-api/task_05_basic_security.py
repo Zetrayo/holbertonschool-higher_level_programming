@@ -77,3 +77,6 @@ def admin_only():
         return jsonify({"error": "Admin access required"}), 403
     return jsonify({"message": f"Hello,
                     {current_user['username']}! You are an admin."})
+
+if __name__ == "__main__":
+    app.run()
